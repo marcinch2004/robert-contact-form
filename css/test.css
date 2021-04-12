@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+header {
+  height: 100px;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+header .site-logo {
+  font-size: 29px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+header .site-logo .logo-svg {
+  width: 4rem;
+  margin-top: -7px;
+}
+
+main {
+  padding: 10vmax 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content-wrapper {
+  max-width: 660px;
+}
+
+main .content-wrapper.text {
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+form {
+  margin: 6rem 0 14rem 0;
+}
+
+form .fields-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 688px) {
+  form .fields-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+form .fields-wrapper .field:first-of-type {
+  margin-right: 1rem;
+}
+
+@media (max-width: 688px) {
+  form .fields-wrapper .field:first-of-type {
+    margin-right: 0;
+  }
+}
+
+form .field {
+  margin-top: 2rem;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 100%;
+}
+
+form .field input, form .field textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  color: #000;
+  font-family: sans-serif;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+}
+
+form .button {
+  cursor: pointer;
+  font-weight: 300;
+}
+
+form .button.primary {
+  margin-top: 1rem;
+  width: auto;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  background-color: white;
+  border-radius: 2rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+form .button.primary:hover {
+  opacity: .7;
+}
+
+.show-on-scroll {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.is-visible {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+/*# sourceMappingURL=test.css.map */
